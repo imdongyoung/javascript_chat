@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="login">
+      <h1>Chat</h1>
+      <div>
+        <input type="text" id="name" placeholder="사용자이름을 입력해주세요!" />
+        <button id="goChat">입장</button>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="user-container">
-        <label for="nickname">대화명: </label>
-        <input type="text" id="nickname" />
+        <span id="nickname"></span>
       </div>
       <div class="display-container">
         <ul class="chatting-list"></ul>

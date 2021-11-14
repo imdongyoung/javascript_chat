@@ -24,3 +24,12 @@ io.on("connection", (socket) => {
     });
   });
 });
+io.on("connection", (socket) => {
+  socket.on("chatStart", (data) => {
+    const { name } = data;
+
+    io.emit("chatStart", {
+      name,
+    });
+  });
+});
